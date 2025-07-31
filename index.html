@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<!-- saved from url=(0070)https://w8.snokido.com/games/html5/friday-night-funkin/0281/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en"><head>
 	
-
-	<title>Friday Night Funkin'</title>
-
+	<meta charset="utf-8">
+	
+	<title>Friday Night Funkin': Kade Engine</title>
+	
 	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="shortcut icon" type="image/png" href="https://w8.snokido.com/games/html5/friday-night-funkin/0281/favicon.png">
-	<link rel="canonical" href="https://www.snokido.com/game/friday-night-funkin">
-
-	<script src="./Friday Night Funkin&#39;_files/f(1).txt"></script><script src="./Friday Night Funkin&#39;_files/f(2).txt"></script><script type="text/javascript" src="./Friday Night Funkin&#39;_files/Funkin.js.download"></script>
-
+	
+	
+	<link rel="shortcut icon" type="image/png" href="./favicon.png">
+	
+	
+	<script type="text/javascript" src="./Kade Engine.js"></script>
+	
 	<script>
 		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, { capture: false, passive: false });
 		if (typeof window.devicePixelRatio != 'undefined' && window.devicePixelRatio > 2) {
@@ -20,102 +20,48 @@
 			meta.setAttribute ('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
 		}
 	</script>
-
+	
 	<style>
 		html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
 		#openfl-content { background: #000000; width: 100%; height: 100%; }
 		@font-face {
 			font-family: 'Pixel Arial 11 Bold';
-			src: url('assets/fonts/pixel.eot?#iefix') format('embedded-opentype'),
-			url('assets/fonts/pixel.woff') format('woff'),
-			url('assets/fonts/pixel.otf') format('truetype');
+			src: url('assets/fonts/pixel.otf') format('truetype');
 			font-weight: normal;
 			font-style: normal;
 		}
 		@font-face {
 			font-family: 'VCR OSD Mono';
-			src: url('assets/fonts/vcr.eot?#iefix') format('embedded-opentype'),
-			url('assets/fonts/vcr.woff') format('woff'),
-			url('assets/fonts/vcr.ttf') format('truetype'),
-			url('assets/fonts/vcr.svg#VCR%20OSD%20Mono') format('svg');
+			src: url('assets/fonts/vcr.ttf') format('truetype');
 			font-weight: normal;
 			font-style: normal;
 		}
 		@font-face {
 			font-family: 'Nokia Cellphone FC Small';
-			src: url('flixel/fonts/nokiafc22.eot?#iefix') format('embedded-opentype'),
-			url('flixel/fonts/nokiafc22.woff') format('woff'),
-			url('flixel/fonts/nokiafc22.ttf') format('truetype'),
-			url('flixel/fonts/nokiafc22.svg#Nokia%20Cellphone%20FC%20Small') format('svg');
+			src: url('flixel/fonts/nokiafc22.ttf') format('truetype');
 			font-weight: normal;
 			font-style: normal;
 		}
 		@font-face {
 			font-family: 'Monsterrat';
-			src: url('flixel/fonts/monsterrat.eot?#iefix') format('embedded-opentype'),
-			url('flixel/fonts/monsterrat.woff') format('woff'),
-			url('flixel/fonts/monsterrat.ttf') format('truetype'),
-			url('flixel/fonts/monsterrat.svg#Monsterrat') format('svg');
+			src: url('flixel/fonts/monsterrat.ttf') format('truetype');
 			font-weight: normal;
 			font-style: normal;
 		}
 
 	</style>
 	
-	<script data-ad-frequency-hint="30s" data-ad-client="ca-pub-7474256871099866" src="./Friday Night Funkin&#39;_files/f(3).txt" "="" crossorigin="anonymous" async="" data-checked-head="true"></script>
-	<script>
-	function startGame() {
-		lime.embed ("Funkin", "openfl-content", 1280, 720, { parameters: {} });
-	}
-	window.adsbygoogle = window.adsbygoogle || []; 
-	var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
-
-	function init() {
-		// Game start logic
-		let adConfigPromise =
-			new Promise((resolve, reject) => adConfig({
-				preloadAdBreaks: 'on',
-				onReady: () => resolve(true)
-			}));
-		let timeoutPromise =
-			new Promise((resolve, reject) => {
-				setTimeout(() => {
-					resolve(false);
-				}, 5000);
-			});
-		// Whatever happens first resolves this promise.
-		Promise.race([
-			adConfigPromise,
-			timeoutPromise
-		]).then((shouldShowPreRoll) => {
-			if (shouldShowPreRoll) {
-				showPreRoll();
-			} else {
-				startGame();
-			}
-		});
-	}
-
-	function showPreRoll() {
-	  // Show ad
-	  adBreak({
-		  type: 'preroll',
-		  adBreakDone: startGame
-	  });
-	}
+</head>
+<body>
 	
-	function ym(){}
-	
-	</script>
-
-<meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
-<body aria-hidden="false">
 	<noscript>This webpage makes extensive use of JavaScript. Please enable JavaScript in your web browser to view this page.</noscript>
-	<div id="openfl-content" style="height: calc(100% - 38px); cursor: default;"><canvas width="1280" height="720" style="transform: translateZ(0px); width: 1626px; height: 915px; margin-left: 147px; margin-top: 0px;"></canvas></div>
-	<script>init();</script>
-	<script>joinUrl = "friday-night-funkin";</script>
-	<div id="tag" style="background:linear-gradient(90deg, rgba(51,51,51,1) 65px, rgba(34,34,34,1) 65px)"><a target="_top" href="https://www.snokido.com/game/friday-night-funkin" style="display: flex; align-items: center; background: url(&quot;./../sk.png&quot;) 15px 6px no-repeat; color: rgb(255, 255, 255); font-family: Arial; font-size: 15px; font-weight: bold; text-indent: 85px; line-height: 38px; text-decoration: none;">Play more Friday Night Funkin Games<svg fill="#ffffff" viewBox="0 0 24 24" width="25px" height="16px"><path d="M9 19.91a2 2 0 0 1-1.403-3.424L12.15 12 7.597 7.514a2 2 0 1 1 2.806-2.85l6 5.91a2 2 0 0 1 0 2.85l-6 5.911A1.993 1.993 0 0 1 9 19.911z"></path></svg></a></div><script src="./Friday Night Funkin&#39;_files/sk.min.js.download"></script>
-<script defer="" src="./Friday Night Funkin&#39;_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;967cc23c9bcbf0e4&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.7.0&quot;,&quot;token&quot;:&quot;b062b5bc397843a2b7cac03511be2721&quot;}" crossorigin="anonymous"></script>
+	
+	<div id="openfl-content" style="cursor: default;"><canvas width="1280" height="720" style="transform: translateZ(0px); width: 1365px; height: 767px; margin-left: 0px; margin-top: 93px;"></canvas></div>
+	
+	<script type="text/javascript">
+		lime.embed ("Kade Engine", "openfl-content", 1280, 720, { parameters: {} });
+	</script>
+	
 
 
-<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;min-height:auto;max-height:none;min-width:auto;max-width:none;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="./Friday Night Funkin&#39;_files/ads.html" data-google-container-id="a!1" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe></div></ins><iframe src="./Friday Night Funkin&#39;_files/runner.html" width="0" height="0" style="display: none;"></iframe><iframe src="./Friday Night Funkin&#39;_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background: transparent !important;" aria-hidden="true" data-slotcar-interstitial="true" data-ad-status="filled"><div id="aswift_1_host" style="border: none !important; height: 100vh !important; width: 100vw !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_1" name="aswift_1" browsingtopics="true" style="inset: 0px auto auto 0px !important; position: absolute !important; border: 0px !important; width: 100vw !important; height: 100vh !important; min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay; attribution-reporting; run-ad-auction" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Friday Night Funkin&#39;_files/ads(1).html" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CP7F-Kr_5o4DFfg2RAgdsvQpkg" data-load-complete="true"></iframe></div></ins><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background: transparent !important;" aria-hidden="true" data-slotcar-rewarded="true" data-ad-status="filled"><div id="aswift_2_host" style="border: none !important; height: 100vh !important; width: 100vw !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_2" name="aswift_2" browsingtopics="true" style="inset: 0px auto auto 0px !important; position: absolute !important; border: 0px !important; width: 100vw !important; height: 100vh !important; min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay; attribution-reporting; run-ad-auction" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Friday Night Funkin&#39;_files/ads(2).html" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CIGa-qr_5o4DFc8vRAgd_tsNoQ" data-load-complete="true"></iframe></div></ins><iframe id="google_esf" name="google_esf" src="./Friday Night Funkin&#39;_files/zrt_lookup_fy2021.html" style="display: none;"></iframe></html>
+</body></html>
